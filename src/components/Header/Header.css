@@ -1,0 +1,33 @@
+
+.header{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-wraper{
+    padding-left: 60px;
+    width: 60%;
+}
+
+.hero-wraper h1{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+
+@media (max-width:500px){
+    .header{
+        height: 60vh;
+    }
+    .hero-wraper{
+        padding: 1rem;
+        width: 100%;
+    }
+    .hero-wraper h1{
+        font-size: 30px;
+        color: #fff;
+        font-weight: 500;
+    }
+}
