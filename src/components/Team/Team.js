@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import DisplayTeam from './DisplayTeam'
 
-import { Row, Col, Card, Button} from 'react-bootstrap'
+import { Container, Row, Col, Card, Button} from 'react-bootstrap'
 import { FaFacebook, FaTwitter, FaGithub, FaInstagram, FaUser } from 'react-icons/fa'
 
 import './Team.css'
@@ -22,6 +22,11 @@ export default function Team() {
     }, [])
 
     return (
-        <DisplayTeam experts={ experts } />
+        <Container>
+            <div className="main-container">
+                <DisplayTeam experts={ experts } />
+            </div>
+        </Container>
+        
     )
 }

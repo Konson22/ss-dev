@@ -1,12 +1,17 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './Header.css'
 
 function Header() {
-    const background = `${process.env.PUBLIC_URL}/images/pexels-brett-sayles-2881229.jpg`
+    const background = `${process.env.PUBLIC_URL}/images/Pngtree.jpg`
     return (
-        <header className="header" style={{backgroundImage: `linear-gradient(to right, rgba(28, 26, 194, 0.545), rgba(0,0,0, .5)), url(${background})`, backgroundSize:'100% 100%'}}>
-            <div className="hero-wraper">
-                <h1>Join S.S Developers Community where I deas become reality</h1>
+        <header className="header" style={{backgroundImage: ` url(${background})`, backgroundSize:'100% 100%'}}>
+            <div className="container">
+                <div className="hero-wraper">
+                    <h1>We turn I deas into reality</h1>
+                    <Link className="btn hero-btn" to="/register"> Join our community</Link>
+                    <button className="btn hero-btn desctop"> See what we do</button>
+                </div>
             </div>
         </header>
     )

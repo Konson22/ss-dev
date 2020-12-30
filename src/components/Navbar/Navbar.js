@@ -19,7 +19,7 @@ function Navbar() {
     const hideMenu = () => setShowmenu(false)
     return (
         <nav>
-            <div className="navbar-wraper">
+            <div className="container navbar-wraper">
                 <div className="logo-wraper">
                     <ul className="nav">
                         <li className="nav-item"><Link className="nav-link" to="/"><h3>SS-Dev</h3></Link></li>
@@ -37,8 +37,8 @@ function Navbar() {
                 }
 
                 <div className="menu-wraper">
-                    <Link className="mr-3" to="/login">Login</Link>
-                    <Link to="/signup">Sign up</Link>
+                    <Link className="btn nav-btn mr-3" to="/login"><FaUserAlt /> Login</Link>
+                    {/* <Link className="btn btn-info" to="/signup">Sign up</Link> */}
                 </div>
                 <div className="mobile-menu">
                     <ul className="nav">

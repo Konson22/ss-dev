@@ -7,15 +7,30 @@
 }
 
 .hero-wraper{
-    padding-left: 60px;
-    width: 60%;
+    width: 70%;
 }
 
 .hero-wraper h1{
     font-size: 50px;
-    color: #fff;
+    color: #01FDFE;
     font-weight: 700;
 }
+
+
+.hero-btn{
+    margin: 30px 20px 0 0;
+    padding: 7px 16px;
+    color: #01FDFE;
+    border: 2px solid #01FDFE;
+}
+.hero-btn:hover{
+    margin: 30px 20px 0 0;
+    padding: 7px 16px;
+    color: rgb(21, 21, 41);
+    background-color: #01FDFE;
+    border: 2px solid #01FDFE;
+}
+
 
 @media (max-width:500px){
     .header{
@@ -29,5 +44,18 @@
         font-size: 30px;
         color: #fff;
         font-weight: 500;
+    }
+    .hero-btn{
+        margin-left: 30px;
+    }
+    .hero-btn:hover{
+        margin-left: 30px;        
+        padding: 7px 16px;
+        color: rgb(21, 21, 41);
+        background-color: #01FDFE;
+        border: 2px solid #01FDFE;
+    }
+    .hero-btn.desctop{
+        display: none;
     }
 }

@@ -1,4 +1,7 @@
 
+body{
+  scroll-behavior: smooth;
+}
 .title-wraper{
   margin-bottom: 30px;
 }
@@ -6,7 +9,20 @@
 .title-wraper h1{
   font-size: calc(20px + 2vmin);
   font-weight: 600;
+  /* color: rgb(253, 141, 14); */
+  background-image: linear-gradient(to right, rgb(253, 90, 14),rgb(253, 50, 14, .9));
+  background-clip: text;
+  color: transparent;
   font-family: cursive;
+}
+address{
+  background-image: linear-gradient(to right, rgb(253, 90, 14),rgb(253, 50, 14, .9));
+  background-clip: text;
+  color: transparent;
+}
+.main-container{
+  padding: 80px 0;
+
 }
 /* .App {
   text-align: center;

@@ -1,7 +1,15 @@
 
 
 footer{
-    height: 250px;
+    padding: 50px 0;
     width: 100%;
-    background-color: black;
+    background-color: rgba(13, 14, 13, 0.925);
+}
+.footer-wraper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content{
+    color: #01FDFE;
 }

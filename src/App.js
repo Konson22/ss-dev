@@ -12,6 +12,7 @@ import Profile from './components/Team/Profile'
 import Footer from './components/Footer/Footer'
 import Login from './components/Forms/Login'
 import Signup from './components/Forms/Signup'
+import RegisterForm from './components/RegisterForm/RegisterForm'
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path="/team"><Team /></Route>
           <Route exact path="/login"><Login /></Route>
           <Route exact path="/signup"><Signup /></Route>
+          <Route exact path="/register"><RegisterForm /></Route>
           <Route exact path="/profile/:id"><Profile /></Route>
         </Switch>
         <Footer />

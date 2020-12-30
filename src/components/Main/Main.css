@@ -1,13 +1,10 @@
 
 .main-container{
-    display: flex;
+    /* display: flex; */
 }
 
 .main-wraper{
     flex: 1;
-}
-.right-side-wraper{
-    flex-basis: 00%;
 }
 
 .main-content{

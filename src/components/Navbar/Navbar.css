@@ -3,13 +3,17 @@
 nav{
     padding: 5px 40px;
     width: 100%;
-    background-color: rgb(36, 36, 37);
+    background-color: rgb(23, 23, 61);
     position: sticky;
     top: 0;
     left: 0;
     z-index: 120;
 }
-
+.nav-btn{
+    padding: 4px 16px;
+    color: #01FDFE;
+    border: 2px solid #01FDFE;
+}
 .navbar-wraper{
     display: flex;
     justify-content: space-between;
@@ -21,7 +25,7 @@ nav{
 }
 .navbar-links-wraper{
     padding-left: 30px;
-    flex: 1;
+    /* flex: 1; */
 }
 .nav .nav-link{
     color: #fff;
