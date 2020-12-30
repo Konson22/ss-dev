@@ -20,6 +20,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/"><Main /></Route>
+          <Route exact path="/ss-dev"><Main /></Route>
           <Route exact path="/about"><About /></Route>
           <Route exact path="/courses"><Courses /></Route>
           <Route exact path="/projects"><Projects /></Route>
