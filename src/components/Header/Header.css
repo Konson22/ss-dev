@@ -19,7 +19,7 @@
 
 @media (max-width:500px){
     .header{
-        height: 60vh;
+        height: 40vh;
     }
     .hero-wraper{
         padding: 1rem;
