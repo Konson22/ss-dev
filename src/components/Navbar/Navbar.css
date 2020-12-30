@@ -33,6 +33,7 @@ nav{
 @media (max-width:500px){
     nav{
         padding: 0 10px;
+        background-color: transparent;
     }
     .navbar-wraper{
         height: 4rem;
