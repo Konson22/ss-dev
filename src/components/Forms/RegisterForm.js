@@ -34,18 +34,22 @@ export default function RegisterForm() {
                         <Form.Label for="name">Name</Form.Label>
                         <FormControl type="text" placeholder="Gender"/>
                     </Form.Group>
-                            <Form.Group>
-                                <FormControl type="text" placeholder="Address"/>
-                            </Form.Group>
-                            <Form.Group>
-                                <FormControl type="text" placeholder="E-mail address"/>
-                            </Form.Group>
-                            <Form.Group>
-                                <FormControl type="text" placeholder="Password"/>
-                            </Form.Group>
-                            <Form.Group>
-                                <FormControl type="text" placeholder="confirm password"/>
-                            </Form.Group>
+                    <Form.Group>
+                        <Form.Label for="name">Name</Form.Label>
+                        <FormControl type="text" placeholder="Address"/>
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label for="name">Name</Form.Label>
+                        <FormControl type="text" placeholder="E-mail address"/>
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label for="name">Name</Form.Label>
+                        <FormControl type="text" placeholder="Password"/>
+                    </Form.Group>
+                    <Form.Group>
+                        <Form.Label for="name">Name</Form.Label>
+                        <FormControl type="text" placeholder="confirm password"/>
+                    </Form.Group>
                     <Form.Group>
                         <FormControl className="btn btn-info" type="submit" value="Submit"/>
                     </Form.Group>
