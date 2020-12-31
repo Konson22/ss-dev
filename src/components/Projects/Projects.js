@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import ProjectCard from './ProjectCard'
 import { Container, Row, Col, Card, Button} from 'react-bootstrap'
 import { FaFacebook, FaTwitter, FaGithub, FaInstagram, FaArrowRight } from 'react-icons/fa'
+import Team from '../Team/Team'
 import './Projects.css'
 
 function Projects() {
@@ -14,7 +15,7 @@ function Projects() {
     })
 
     useEffect(() => {
-        fetch('https://ssdev-api.herokuapp.com/projects').then(res => res.json()).then(data => setProjects({
+        fetch('/projects').then(res => res.json()).then(data => setProjects({
             status:true,
             data:data,
             error:false
@@ -23,6 +24,7 @@ function Projects() {
 
     
     return (
+        <>
         <div className="main-container projects-container">
             <Container>
                 <div className="title-wraper text-center">
@@ -36,6 +38,8 @@ function Projects() {
                 </div>
             </Container>
         </div>
+         <Team />
+        </>
     )
 }
 

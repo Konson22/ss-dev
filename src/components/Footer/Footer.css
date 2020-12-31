@@ -13,3 +13,7 @@ footer{
 .footer-content{
     color: #01FDFE;
 }
+.footer-content form{
+    padding: 20px;
+    background-color: rgb(253, 90, 14);
+}

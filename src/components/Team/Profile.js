@@ -13,7 +13,7 @@ export default function Profile() {
     const {id} = useParams()
     useEffect(() => {
         
-        fetch('https://ssdev-api.herokuapp.com/expert').then(res => res.json()).then(data => data.filter(user => user.id === id))
+        fetch('/expert').then(res => res.json()).then(data => data.filter(user => user.id === id))
         .then( user => setUser({
             status:true,
             data:user,
@@ -24,31 +24,36 @@ export default function Profile() {
     let content
     if(user.data){
         content = user.data.map(profile => (
-            <Row className="profile-wraper">
-                <Col md={6}>
-                    <div className="profile-img">
-                        <img src={process.env.PUBLIC_URL + profile.img } />                        
-                    </div>
-                </Col>
-                <Col md={6}>
-                    <div className="profile-text">
-                        <ul>
-                            <li className="nav-link">Name: { profile.name }</li>
-                            <li className="nav-link">Gender: { profile.gender }</li>
-                            <li className="nav-link">Current City: { profile.city }</li>
-                            <li className="nav-link">Title: { profile.title }</li>
-                            <li className="nav-link">Name: { profile.name }</li>
-                        </ul>
-                    </div>
-                </Col>
-            </Row>
+            <>
+                <h3>{ profile.name }'s Profile</h3>
+
+                <Row className="profile-wraper">
+                    <Col md={4}>
+                        <div className="profile-img">
+                            <img src={process.env.PUBLIC_URL + profile.img } />                        
+                        </div>
+                    </Col>
+                    <Col md={6}>
+                        <div className="profile-text">
+                            <ul>
+                                <li className="nav-link">Name: { profile.name }</li>
+                                <li className="nav-link">Gender: { profile.gender }</li>
+                                <li className="nav-link">Current City: { profile.city }</li>
+                                <li className="nav-link">Title: { profile.title }</li>
+                                <li className="nav-link">Name: { profile.name }</li>
+                            </ul>
+                        </div>
+                    </Col>
+                </Row>
+            </>
         ))
     }
 
     return (
         <div className="container">
-            <h3>Kon's Profile</h3>
-            { content }
+            <div className="main-container">
+                { content }
+            </div>
         </div>
     )
 }

@@ -37,8 +37,8 @@ function Navbar() {
                 }
 
                 <div className="menu-wraper">
-                    <Link className="btn nav-btn mr-3" to="/login"><FaUserAlt /> Login</Link>
-                    {/* <Link className="btn btn-info" to="/signup">Sign up</Link> */}
+                    <Link className="btn nav-btn mr-3" to="/register"> Join community</Link>
+                    <Link className="btn nav-btn" to="/signup">Sign up</Link>
                 </div>
                 <div className="mobile-menu">
                     <ul className="nav">

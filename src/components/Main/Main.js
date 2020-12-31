@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Header from '../Header/Header'
 import Sidebar from '../Sidebar/Sidebar'
 import Team from '../Team/Team'
+import Services from '../Services/Services'
 import ProjectCard from '../Projects/ProjectCard'
 
 
@@ -20,7 +21,7 @@ export default function Main() {
     })
 
     useEffect(() => {
-        fetch('https://ssdev-api.herokuapp.com/projects').then(res => res.json()).then(data => setProjects({
+        fetch('/projects').then(res => res.json()).then(data => setProjects({
             status:true,
             data:data,
             error:false
@@ -43,6 +44,8 @@ export default function Main() {
                     <p>we do a custom websites and web application development services, you get high-performing, intuitive, and secure web solutions that support business processes and serve users globally. A custom web app that’s tailored to your needs increases workflow productivity and supports business growth. I can help you conceive, design, and develop your custom web application.application guidelines and standardswe do a custom websites and web application development services, you get high-performing, intuitive, and secure web solutions that support business processes and serve users globally. A custom web app that’s tailored to your needs increases workflow productivity and supports business growth. I can help you conceive, design, and develop your custom web application.application guidelines and standards. </p>
                 </div>
             </div>
+            <Services />
+
             <div className="main-container projects-container">
                 <Container>
                 <div className="title-wraper text-center">

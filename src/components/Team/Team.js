@@ -14,7 +14,7 @@ export default function Team() {
     })
 
     useEffect(() => {
-        fetch('https://ssdev-api.herokuapp.com/expert').then(res => res.json()).then(data => setExperts({
+        fetch('/expert').then(res => res.json()).then(data => setExperts({
             status:true,
             data:data,
             error:false

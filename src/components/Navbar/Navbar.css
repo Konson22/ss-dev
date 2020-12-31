@@ -3,7 +3,9 @@
 nav{
     padding: 5px 40px;
     width: 100%;
-    background-color: rgb(23, 23, 61);
+    /* background-color: rgb(23, 23, 61); */
+    background-image: linear-gradient(to right, rgb(253, 90, 14),rgb(253, 50, 14));
+
     position: sticky;
     top: 0;
     left: 0;

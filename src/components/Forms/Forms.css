@@ -14,6 +14,14 @@
     background-color: antiquewhite;
 }
 
+.form-container{
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid rgb(253, 90, 14);
+    color: aliceblue;
+
+}
 @media (max-width:500px){
     .form-content{
         padding: 30px;

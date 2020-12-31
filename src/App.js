@@ -2,23 +2,26 @@
 import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 
 import './App.css';
+import ScrollToTop from './components/ScrollToTop'
 import Navbar from './components/Navbar/Navbar'
 import Main from './components/Main/Main'
 import About from './components/About/About'
 import Courses from './components/Courses/Courses'
 import Projects from './components/Projects/Projects'
+import Services from './components/Services/Services'
 import Team from './components/Team/Team'
 import Profile from './components/Team/Profile'
 import Footer from './components/Footer/Footer'
 import Login from './components/Forms/Login'
 import Signup from './components/Forms/Signup'
-import RegisterForm from './components/RegisterForm/RegisterForm'
+import RegisterForm from './components/Forms/RegisterForm'
 
 function App() {
   return (
     <div className="App-wraper">
       <Router>
         <Navbar />
+        <ScrollToTop />
         <Switch>
           <Route exact path="/"><Main /></Route>
           <Route exact path="/ss-dev"><Main /></Route>
@@ -26,6 +29,7 @@ function App() {
           <Route exact path="/courses"><Courses /></Route>
           <Route exact path="/projects"><Projects /></Route>
           <Route exact path="/team"><Team /></Route>
+          <Route exact path="/services"><Services /></Route>
           <Route exact path="/login"><Login /></Route>
           <Route exact path="/signup"><Signup /></Route>
           <Route exact path="/register"><RegisterForm /></Route>
