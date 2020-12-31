@@ -13,7 +13,7 @@ export default function Profile() {
     const {id} = useParams()
     useEffect(() => {
         
-        fetch('/expert').then(res => res.json()).then(data => data.filter(user => user.id === id))
+        fetch('https://ssdev-api.herokuapp.com/expert').then(res => res.json()).then(data => data.filter(user => user.id === id))
         .then( user => setUser({
             status:true,
             data:user,

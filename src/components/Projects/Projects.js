@@ -15,7 +15,7 @@ function Projects() {
     })
 
     useEffect(() => {
-        fetch('/projects').then(res => res.json()).then(data => setProjects({
+        fetch('https://ssdev-api.herokuapp.com/projects').then(res => res.json()).then(data => setProjects({
             status:true,
             data:data,
             error:false
