@@ -2,8 +2,8 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://konson22.github.io/ss-dev",
-  "proxy": "https://ssdev-api.herokuapp.com",
+  "homepage": "https://konson22.github.io/ss-dev",
+  "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -13,6 +13,7 @@
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
+    "react-emoji": "^0.5.0",
     "react-gsap": "^2.2.1",
     "react-icons": "^4.1.0",
     "react-router-dom": "^5.2.0",

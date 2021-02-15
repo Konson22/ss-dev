@@ -1,0 +1,71 @@
+
+.matches-container{
+    display: flex;
+    justify-content: space-between;
+}
+.matches-container span{
+    margin: 1px 1px;
+    padding: 5px;
+    border: 1px solid #eee;
+    background-color: rgb(226, 245, 223);
+    flex: auto;
+}
+.teams-row{
+    flex: 1;
+}
+.date-text{
+    font-size: 14px;
+}
+.body-header{
+    margin-top: 7px;
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(49, 34, 182);
+    color: #fff;
+}
+
+.body-header span{
+    font-size: large;
+}
+.my-table tr td{
+    padding: 4px;
+}
+.my-table tr:hover{
+    padding: 4px;
+    background-color: rgb(176, 184, 174);
+}
+
+.popup-module{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(176, 184, 174, 0.644);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 10;
+}
+.hide-module{
+    display: none;
+}
+.bet-card-header{
+    display: flex;
+    justify-content: space-between;
+}
+.bet-card-header h5 span{
+    font-size: 15px;
+}
+.inner-module{
+    padding: 15px;
+    width: 30%;
+    background-color: #eee;
+}
+@media screen and (max-width:600px){
+    .matches-container span{
+        margin: 1px 1px;
+        padding: 5px;
+        font-synthesis: 14px;
+    }
+}

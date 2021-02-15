@@ -1,20 +1,14 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import Navbar from './Navbar/Navbar'
 import './Header.css'
 
-function Header() {
-    const background = `${process.env.PUBLIC_URL}/images/Pngtree.jpg`
+export default function Header() {
+    const bckImg = process.env.PUBLIC_URL+"/images/header-bg.jpg"
     return (
-        <header className="header" style={{backgroundImage: ` url(${background})`, backgroundSize:'100% 100%'}}>
-            <div className="container">
-                <div className="hero-wraper">
-                    <h1>We turn I deas into reality</h1>
-                    <Link className="btn hero-btn" to="/register"> Join our community</Link>
-                    <button className="btn hero-btn desctop"> See what we do</button>
-                </div>
-            </div>
+        <>
+        <header className="header-container" style={{backgroundImage:`URL(${bckImg})`, backgroundSize:"100% 90%"}}>
         </header>
+        <Navbar />
+        </>
     )
 }
-
-export default Header

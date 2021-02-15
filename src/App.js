@@ -3,42 +3,53 @@ import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 
 import './App.css';
 import ScrollToTop from './components/ScrollToTop'
-import Navbar from './components/Navbar/Navbar'
+import Header from './components/Header/Header'
+import LeftSidebar from './components/Sidebar/LeftSidebar'
+import RightSidebar from './components/Sidebar/RightSidebar'
+import Subheader from './components/Header/Subheader/Subheader'
+import Subnav from './components/Header/Subheader/Subnav'
 import Main from './components/Main/Main'
-import About from './components/About/About'
-import Courses from './components/Courses/Courses'
-import Projects from './components/Projects/Projects'
-import Services from './components/Services/Services'
-import Team from './components/Team/Team'
-import Profile from './components/Team/Profile'
-import Footer from './components/Footer/Footer'
-import Login from './components/Forms/Login'
-import Signup from './components/Forms/Signup'
-import RegisterForm from './components/Forms/RegisterForm'
+import Soccer from './components/Pages/Soccer/Soccer'
+import Basketball from './components/Pages/Basketball/Basketball'
+import Tables from './components/Pages/Soccer/Tables'
+import Results from './components/Pages/Soccer/Tables/Results'
+import Tennis from './components/Pages/Tennis/Tennis'
+import { DataProvider } from './components/GlobalContext/GlobalContext'
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className="App-wraper">
+    <div className="App-wraer">
       <Router>
-        <Navbar />
-        <ScrollToTop />
-        <Switch>
-          <Route exact path="/"><Main /></Route>
-          <Route exact path="/ss-dev"><Main /></Route>
-          <Route exact path="/about"><About /></Route>
-          <Route exact path="/courses"><Courses /></Route>
-          <Route exact path="/projects"><Projects /></Route>
-          <Route exact path="/team"><Team /></Route>
-          <Route exact path="/services"><Services /></Route>
-          <Route exact path="/login"><Login /></Route>
-          <Route exact path="/signup"><Signup /></Route>
-          <Route exact path="/register"><RegisterForm /></Route>
-          <Route exact path="/profile/:id"><Profile /></Route>
-        </Switch>
-        <Footer />
+        <Header />
+          <main className="app-container">
+            <LeftSidebar />
+            <section className="main-section">
+              <Subheader />
+              <Subnav />
+              <DataProvider>
+                <Switch>
+                  <Route exact path="/"><Main /></Route>
+                  <Route  path="/sport" component={Soccer} />
+                  <Route  path="/table">
+                      <Tables />
+                  </Route>
+                  <Route  path="/result" component={Results} />
+                  <Route exact path="/basketball"><Basketball /></Route>
+                  <Route exact path="/tennis"><Tennis /></Route>
+                </Switch>
+              </DataProvider>
+            </section>
+            <RightSidebar />
+          </main>
+      <Footer />
       </Router>
+
     </div>
   );
 }
+        // <Header />
+        // <ScrollToTop />
+        
 
 export default App;
